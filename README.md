@@ -39,6 +39,7 @@ bellabeat-case-study/
 ├── bellabeat_case_study_github.md  # Full case study in Markdown format
 ├── images/                         # Visualizations and screenshots
 └── scripts/                        # R scripts for cleaning, merging, and analysis
+```
 
 ---
 
@@ -46,7 +47,8 @@ bellabeat-case-study/
 1. Clone this Repository
 ```bash
 git clone https://github.com/SCThymian/bellabeat-case-study.git
-```	2.	Open bellabeat_case_study_github.md on GitHub or locally in a Markdown viewer.
+```
+2.	Open bellabeat_case_study_github.md on GitHub or locally in a Markdown viewer.
 
 ---
 
