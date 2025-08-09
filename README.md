@@ -23,38 +23,34 @@ The analysis follows the **6 phases of the Data Analysis Life Cycle**:
 
 ---
 
-## 🛠 Verwendete Tools & Technologien
-- **R** (Datenbereinigung, Analyse)
-- **Tableau Public** (Visualisierung)
-- **Markdown** (Dokumentation)
-- **GitHub** (Versionierung & Veröffentlichung)
+## 🛠 Tools & Technologies
+- **R** (data cleaning, transformation, analysis)
+- **Tableau Public** (visualization)
+- **Markdown** (documentation)
+- **GitHub** (version control & publishing)
 
 ---
 
-## 📂 Repository-Struktur
+## 📂 Repository Structure
 ```plaintext
 bellabeat-case-study/
 │
-├── README.md                      # Projektübersicht
-├── bellabeat_case_study_github.md  # Vollständige Analyse in Markdown
-├── data/                           # (Optional) Datensätze oder Beispiel-Daten
-├── images/                         # Visualisierungen und Screenshots
-└── scripts/                        # R- oder Python-Skripte
-```
+├── README.md                      # Project overview
+├── bellabeat_case_study_github.md  # Full case study in Markdown format
+├── images/                         # Visualizations and screenshots
+└── scripts/                        # R scripts for cleaning, merging, and analysis
 
 ---
 
-## 🚀 Verwendung
-1. Klone dieses Repository
+## 🚀 How to Use
+1. Clone this Repository
 ```bash
-git clone https://github.com/dein-username/bellabeat-case-study.git
-```
-2. Öffne `bellabeat_case_study_github.md` direkt auf GitHub oder lokal in einem Markdown-Viewer.
-3. Optional: Nutze die R-Skripte im `scripts/`-Ordner zur Replikation der Analyse.
+git clone https://github.com/SCThymian/bellabeat-case-study.git
+```	2.	Open bellabeat_case_study_github.md on GitHub or locally in a Markdown viewer.
 
 ---
 
 ## ✍️ Autor
-- **Name:** Dein Name
+- **Name:** Stelios C. Thymianos
 - **LinkedIn:** [Dein LinkedIn-Profil](https://www.linkedin.com)
 - **Medium:** [Deine Medium-Seite](https://medium.com)
