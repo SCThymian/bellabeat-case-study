@@ -1,24 +1,25 @@
 # Bellabeat Data Analysis Case Study
 
-## 📌 Projektübersicht
-Diese Fallstudie ist Teil des **Google Data Analytics Professional Certificate** und demonstriert den kompletten Analyseprozess von Rohdaten bis zu handlungsrelevanten Empfehlungen.
+## 📌 Project Overview
+This case study is part of the **Google Data Analytics Professional Certificate**.  
+It demonstrates the full process of analyzing Fitbit fitness tracker data for **Bellabeat**, a wellness company, from raw dataset to actionable marketing recommendations.
 
-Die Analyse folgt den 6 Phasen des Data Analysis Life Cycle:
-1. **Ask** – Definition der Business-Fragen
-2. **Prepare** – Auswahl und Überprüfung der Datenquellen
-3. **Process** – Datenbereinigung und -aufbereitung in R
-4. **Analyze** – Explorative Analyse und Visualisierungen in Tableau
-5. **Share** – Präsentation der Ergebnisse
-6. **Act** – Handlungsempfehlungen ableiten
-
+The analysis follows the **6 phases of the Data Analysis Life Cycle**:
+1. **Ask** – Define business questions.
+2. **Prepare** – Select and verify data sources.
+3. **Process** – Clean and transform data in R.
+4. **Analyze** – Explore and visualize data using Tableau.
+5. **Share** – Communicate findings.
+6. **Act** – Provide actionable recommendations.
+   
 ---
 
-## 📊 Wichtige Insights
-- Durchschnittlich 7.629 Schritte pro Tag, höchste Aktivität Dienstag & Samstag
-- Starke Korrelation zwischen **sehr aktiven Minuten** und Kalorienverbrauch
-- Nutzer sind am aktivsten zwischen **17:00 und 19:00 Uhr**
-- Durchschnittliche Schlafdauer: **7 Stunden**, längere Schlafzeiten am Wochenende
-- Hoher Nutzerverlust: 33 → 21 aktive Nutzer in einem Monat
+## 📊 Key Insights
+- **Average daily steps:** 7,629 – highest activity on Tuesdays and Saturdays.
+- Strong correlation between **very active minutes** and calories burned.
+- Peak activity hours: **5 PM – 7 PM**.
+- **Average sleep:** ~7 hours, longer on weekends.
+- High user drop-off: from 33 to 21 active users in one month.
 
 ---
 
