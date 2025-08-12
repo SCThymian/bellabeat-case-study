@@ -18,6 +18,7 @@ Scenario:
 
 I am a junior data analyst working on the marketing analyst team at Bellabeat, a high-tech manufacturer of health-focused products for women. Bellabeat is a successful small company, but they have the potential to become a larger player in the global smart device market. In order to unlock new growth opportunities for the company, I have been asked to focus on one of Bellabeat’s products and analyze smart device data to gain insight into how consumers are using their smart devices. The insights I discover will then help guide marketing strategy for the company. I will present my analysis to the Bellabeat executive team along with my high-level recommendations for Bellabeat’s marketing strategy.
 
+
 About the company:
 
 Urška Sršen and Sando Mur founded Bellabeat, a high-tech company that manufactures health-focused smart products. Sršen used her background as an artist to develop beautifully designed technology that informs and inspires women around the world. Collecting data on activity, sleep, stress, and reproductive health has allowed Bellabeat to empower women with knowledge about their own health and habits. Since it was founded in 2013, Bellabeat has grown rapidly and quickly positioned itself as a tech-driven wellness company for women.
@@ -25,7 +26,8 @@ By 2016, Bellabeat had opened offices around the world and launched multiple pro
 Sršen knows that an analysis of Bellabeat’s available consumer data would reveal more opportunities for growth. She has asked the marketing analytics team to focus on a Bellabeat product and analyze smart device usage data in order to gain insight into how people are already using their smart devices. Then, using this information, she would like high-level recommendations for how these trends can inform Bellabeat marketing strategy.
 
 
-Products
+
+Products:<br>
 - **Bellabeat app:** The Bellabeat app provides users with health data related to their activity, sleep, stress, menstrual cycle, and mindfulness habits. This data can help users better understand their current habits and make healthy decisions. The Bellabeat app connects to their line of smart wellness products.
 - **Leaf:** Bellabeat’s classic wellness tracker can be worn as a bracelet, necklace, or clip. The Leaf tracker connects to the Bellabeat app to track activity, sleep, and stress.
 - **Time:** This wellness watch combines the timeless look of a classic timepiece with smart technology to track user activity, sleep, and stress. The Time watch connects to the Bellabeat app to provide you with insights into your daily wellness.
@@ -38,13 +40,13 @@ Products
 
 The Ask-Phase is the first foundational step in the data analysis process. It's crucial because it sets the direction for the entire analysis and ensures that everyone, who is involved, is aligned with the business task, that the data analysis aims to solve.
 
-<u><strong>Business task:</strong></u>
+**Business task:** <br>
 Analyzing smart device usage data in order to gain insight into how consumers use non-Bellabeat smart devices. Then, selecting one Bellabeat product to apply these insights to in the presentation. Following three points are the questions needed to be answered by this analysis:
 1. What are some trends in smart device usage?
 2. How could these trends apply to Bellabeat customers?
 3. How could these trends help influence Bellabeat marketing strategy?
 
-<u><strong>Stakeholders:</strong></u>
+<u><strong>Stakeholders:</strong></u><br>
 Knowing the audience is key to successful communication. In this presentation, the following participants will be present:
 - Urška Sršen: Bellabeat’s cofounder and Chief Creative Officer
 - Sando Mur: Mathematician and Bellabeat’s cofounder; key member of the Bellabeat executive team
@@ -64,7 +66,7 @@ Verifying the metadata of our dataset we can confirm it is open-source. The owne
 
 
 
-Considerations:
+_Considerations:_
 - Due to the limitation of size (30 users) and not having any demographic information we could encounter a sampling bias. We are not sure if the sample is representative of the population as a whole. That is why we will give our case study an operational approach.
 - The dataset does not provide information about gender of the users. Bellabeat is a tech-driven wellness company for women only.
 - The data is from 2016, so it is outdated as fitness trackers matured a lot since then. Also the period of the survey is limited (2 months long).
@@ -75,7 +77,7 @@ Most data is recorded from Tuesday to Thursday, which may not be comprehensive e
 
 ## **3. Process**
 
-In this phase I will clean and manipulate the data properly to set the foundation for an accurate and meaningful analysis. For this purpose, I choose to use R due to it’s accessibility [(Open Source Posit Cloud](https://posit.cloud/) , the amount of data I will be working with and because the fact that I can create quick data visualizations to gain insights, which I can share with the stakeholders later on.
+In this phase I will clean and manipulate the data properly to set the foundation for an accurate and meaningful analysis. For this purpose, I choose to use R due to it’s accessibility [(Open Source Posit Cloud)](https://posit.cloud/) , the amount of data I will be working with and because the fact that I can create quick data visualizations to gain insights, which I can share with the stakeholders later on.
 Bellow is the summary of the steps I took to complete this phase. For the detailed data cleaning report please click here.
 
 
@@ -133,7 +135,8 @@ Since I have to present the results of the analysis later (on phase 5. Share) to
 With that have been saying, let´s dive deep into the data!
 
 
-Daily Activity
+**Daily Activity**
+
 Starting with the analysis of the daily activity and with the summary() function in R, we will discover some first useful insights of user behavior.
 
 ```
@@ -175,7 +178,7 @@ Insights:
 
 
 
-Hourly Activity
+**Hourly Activity**
 
 Let´s get some insights about the user activity during the day. When are users more active?
 
@@ -216,7 +219,7 @@ Insights:
 
 
 
-Activity and Calories:
+**Activity and Calories:**
 
 I will check the correlation between the different levels of activity (lightly, fairly and very active o) and the burned calories but also the correlation between steps and calories. The three levels of activity are lightly active (low activity), fairly active (medium activity) and very active (high activity).
 
@@ -237,7 +240,10 @@ Insights:
 
 - There is a strong correlation between very active minutes and the amount of calories burned. The R-squared value seems to rise as the intensity increases from medium activity to high activity. The most desired time people are active throughout the day is between 7:00 AM - 8:00PM
 - There is a positive correlation between the number of steps taken and the number of calories burned.
-Daily Sleep
+
+
+**Daily Sleep**
+
 Analyzing daily sleep data will help us to understand user sleep patterns. Starting with the summarization of the daily_sleep dataset we have:
 
 ```
@@ -265,7 +271,8 @@ Insights:
 
 
 
-User Engagement
+**User Engagement**
+
 What also matters is the user engagement with the product. I am going to check how engaged the users were with the data tracking by analyzing the number of users per date and by grouping them in full time and casual users.
 
 ![Abbildung image15](images/image15.png)
