@@ -8,18 +8,20 @@
 ## **Introduction**
 
 Hello and welcome to my Bellabeat case study!
-This is a capstone project from the Google Data Analytics Professional Certificate, which gives me the opportunity to perform a real-world task of a data analyst. The analysis follows the 6 steps of Data Analysis, that they were taught in the course:
+This is a capstone project from the [Google Data Analytics Professional Certificate](https://www.coursera.org/professional-certificates/google-data-analytics?), which gives me the opportunity to perform a real-world task of a data analyst. The analysis follows the 6 steps of Data Analysis, that they were taught in the course:
 
 **Ask -> Prepare -> Process -> Analyze -> Share -> Act**
 
 ![Abbildung image1](images/image1.png)
 
-Scenario
+Scenario:
+
 I am a junior data analyst working on the marketing analyst team at Bellabeat, a high-tech manufacturer of health-focused products for women. Bellabeat is a successful small company, but they have the potential to become a larger player in the global smart device market. In order to unlock new growth opportunities for the company, I have been asked to focus on one of Bellabeat’s products and analyze smart device data to gain insight into how consumers are using their smart devices. The insights I discover will then help guide marketing strategy for the company. I will present my analysis to the Bellabeat executive team along with my high-level recommendations for Bellabeat’s marketing strategy.
 
-About the company
+About the company:
+
 Urška Sršen and Sando Mur founded Bellabeat, a high-tech company that manufactures health-focused smart products. Sršen used her background as an artist to develop beautifully designed technology that informs and inspires women around the world. Collecting data on activity, sleep, stress, and reproductive health has allowed Bellabeat to empower women with knowledge about their own health and habits. Since it was founded in 2013, Bellabeat has grown rapidly and quickly positioned itself as a tech-driven wellness company for women.
-By 2016, Bellabeat had opened offices around the world and launched multiple products. Bellabeat products became available through a growing number of online retailers in addition to their own e-commerce channel on their website. The company has invested in traditional advertising media, such as radio, out-of-home billboards, print, and television, but focuses on digital marketing extensively. Bellabeat invests year-round in Google Search, maintaining active Facebook and Instagram pages, and consistently engages consumers on X. Additionally, Bellabeat runs video ads on Youtube and display ads on the Google Display Network to support campaigns around key marketing dates.
+By 2016, Bellabeat had opened offices around the world and launched multiple products. Bellabeat products became available through a growing number of online retailers in addition to their own e-commerce channel on their [website](https://bellabeat.com). The company has invested in traditional advertising media, such as radio, out-of-home billboards, print, and television, but focuses on digital marketing extensively. Bellabeat invests year-round in Google Search, maintaining active Facebook and Instagram pages, and consistently engages consumers on X. Additionally, Bellabeat runs video ads on Youtube and display ads on the Google Display Network to support campaigns around key marketing dates.
 Sršen knows that an analysis of Bellabeat’s available consumer data would reveal more opportunities for growth. She has asked the marketing analytics team to focus on a Bellabeat product and analyze smart device usage data in order to gain insight into how people are already using their smart devices. Then, using this information, she would like high-level recommendations for how these trends can inform Bellabeat marketing strategy.
 
 
@@ -36,13 +38,13 @@ Products
 
 The Ask-Phase is the first foundational step in the data analysis process. It's crucial because it sets the direction for the entire analysis and ensures that everyone, who is involved, is aligned with the business task, that the data analysis aims to solve.
 
-<u>**Business task:**</u>
+<u><strong>Business task:</strong></u>
 Analyzing smart device usage data in order to gain insight into how consumers use non-Bellabeat smart devices. Then, selecting one Bellabeat product to apply these insights to in the presentation. Following three points are the questions needed to be answered by this analysis:
 1. What are some trends in smart device usage?
 2. How could these trends apply to Bellabeat customers?
 3. How could these trends help influence Bellabeat marketing strategy?
 
-<u>**Stakeholders:**</u>
+<u><strong>Stakeholders:</strong></u>
 Knowing the audience is key to successful communication. In this presentation, the following participants will be present:
 - Urška Sršen: Bellabeat’s cofounder and Chief Creative Officer
 - Sando Mur: Mathematician and Bellabeat’s cofounder; key member of the Bellabeat executive team
@@ -50,7 +52,7 @@ Knowing the audience is key to successful communication. In this presentation, t
 
 ## **2. Prepare**
 
-To answer Bellabeat's business tasks I will be using  (CC0: Public Domain, dataset made available through ): This Kaggle data set contains personal fitness tracker from thirty (30) fitbit users. All users consented to the submission of personal tracker data, including minute-level output for physical activity, heart rate, and sleep monitoring. It includes information about daily activity, steps, and heart rate that can be used to explore users’ habits. The dataset contains 18 CSV-files and all of them are organized in long-format.
+To answer Bellabeat's business tasks I will be using [FitBit Fitness Tracker Data](https://www.kaggle.com/arashnic/fitbit) (CC0: Public Domain, dataset made available through [Mobius](https://www.kaggle.com/arashnic/)): This Kaggle data set contains personal fitness tracker from thirty (30) fitbit users. All users consented to the submission of personal tracker data, including minute-level output for physical activity, heart rate, and sleep monitoring. It includes information about daily activity, steps, and heart rate that can be used to explore users’ habits. The dataset contains 18 CSV-files and all of them are organized in long-format.
 Verifying the metadata of our dataset we can confirm it is open-source. The owner has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.
 
 **ROCCC**-analysis of the dataset:
