@@ -5,7 +5,7 @@
 
 ---
 
-Introduction
+**Introduction**
 
 Hello and welcome to my Bellabeat case study!
 This is a capstone project from the Google Data Analytics Professional Certificate, which gives me the opportunity to perform a real-world task of a data analyst. The analysis follows the 6 steps of Data Analysis, that they were taught in the course:
@@ -23,15 +23,15 @@ Sršen knows that an analysis of Bellabeat’s available consumer data would re
 
 
 Products
-Bellabeat app: The Bellabeat app provides users with health data related to their activity, sleep, stress, menstrual cycle, and mindfulness habits. This data can help users better understand their current habits and make healthy decisions. The Bellabeat app connects to their line of smart wellness products.
-Leaf: Bellabeat’s classic wellness tracker can be worn as a bracelet, necklace, or clip. The Leaf tracker connects to the Bellabeat app to track activity, sleep, and stress.
-Time: This wellness watch combines the timeless look of a classic timepiece with smart technology to track user activity, sleep, and stress. The Time watch connects to the Bellabeat app to provide you with insights into your daily wellness.
-Spring: This is a water bottle that tracks daily water intake using smart technology to ensure that you are appropriately hydrated throughout the day. The Spring bottle connects to the Bellabeat app to track your hydration levels.
-Bellabeat membership: Bellabeat also offers a subscription-based membership program for users. Membership gives users 24/7 access to fully personalized guidance on nutrition, activity, sleep, health and beauty, and mindfulness based on their lifestyle and goals.
+- Bellabeat app: The Bellabeat app provides users with health data related to their activity, sleep, stress, menstrual cycle, and mindfulness habits. This data can help users better understand their current habits and make healthy decisions. The Bellabeat app connects to their line of smart wellness products.
+- Leaf: Bellabeat’s classic wellness tracker can be worn as a bracelet, necklace, or clip. The Leaf tracker connects to the Bellabeat app to track activity, sleep, and stress.
+- Time: This wellness watch combines the timeless look of a classic timepiece with smart technology to track user activity, sleep, and stress. The Time watch connects to the Bellabeat app to provide you with insights into your daily wellness.
+- Spring: This is a water bottle that tracks daily water intake using smart technology to ensure that you are appropriately hydrated throughout the day. The Spring bottle connects to the Bellabeat app to track your hydration levels.
+- Bellabeat membership: Bellabeat also offers a subscription-based membership program for users. Membership gives users 24/7 access to fully personalized guidance on nutrition, activity, sleep, health and beauty, and mindfulness based on their lifestyle and goals.
 
 
 
-- Ask
+**Ask**
 
 The Ask-Phase is the first foundational step in the data analysis process. It's crucial because it sets the direction for the entire analysis and ensures that everyone, who is involved, is aligned with the business task, that the data analysis aims to solve.
 
@@ -47,7 +47,7 @@ Urška Sršen: Bellabeat’s cofounder and Chief Creative Officer
 Sando Mur: Mathematician and Bellabeat’s cofounder; key member of the Bellabeat executive team
 Bellabeat marketing analytics team: A team of data analysts responsible for collecting, analyzing, and reporting data that helps guide Bellabeat’s marketing strategy.
 
-- Prepare
+**Prepare**
 
 To answer Bellabeat's business tasks I will be using  (CC0: Public Domain, dataset made available through ): This Kaggle data set contains personal fitness tracker from thirty (30) fitbit users. All users consented to the submission of personal tracker data, including minute-level output for physical activity, heart rate, and sleep monitoring. It includes information about daily activity, steps, and heart rate that can be used to explore users’ habits. The dataset contains 18 CSV-files and all of them are organized in long-format.
 Verifying the metadata of our dataset we can confirm it is open-source. The owner has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.
@@ -70,7 +70,7 @@ Most data is recorded from Tuesday to Thursday, which may not be comprehensive e
 
 
 
-- Process
+**Process**
 
 In this phase I will clean and manipulate the data properly to set the foundation for an accurate and meaningful analysis. For this purpose, I choose to use R due to it’s accessibility (Open Source Posit Cloud) , the amount of data I will be working with and because the fact that I can create quick data visualizations to gain insights, which I can share with the stakeholders later on.
 Bellow is the summary of the steps I took to complete this phase. For the detailed data cleaning report please click here.
@@ -79,7 +79,8 @@ Bellow is the summary of the steps I took to complete this phase. For the detail
 - Setting up the work-environment(R):
 - First of all, we have to install and load all the needed packages that will aid us for the cleaning and analysis process:
 
-
+![Abbildung image2](images/image2.png)
+![Abbildung image3](images/image3.png)
 
 
 - Importing  Dataset:
@@ -101,6 +102,8 @@ weight <- read_csv("data/weightLogInfo_merged.csv")
 
 By checking the datasets, I noticed that there are already Calories- and Steps-data in the dataset daily_activity contained. To make sure that it so, I am going to use the “which”-function.
 
+![Abbildung image4](images/image4.png)
+
 It turned out, that they are indeed already contained so I will drop the daily_steps and daily_calories from my analysis to avoid double and repeated data.
 
 I am also checking the number of unique users per data frame before coming on with the cleaning process, by using the n_unique code.
@@ -119,7 +122,7 @@ After checking the data for duplicates and missing values, there were 3 duplicat
 
 
 
-- Analyze
+**Analyze**
 
 Now we are ready to conduct the data analysis to gain insights into the data and identify trends that could inform Bellabeats´s marketing strategy.  As determined by the Process step, I have a variety of data tables that measures different fitness parameters (steps, calories, distance, sleep, activity, etc) in both daily and hourly time frames. However, for organizational consistency as well as ease and simplicity, I will perform analysis on the data tables by whether observations are provided at a daily or hourly intervals. This is made possible because the “Id” column is a shared key that corresponds between each of the data tables. For an even more advanced.
 Since I have to present the results of the analysis later (on phase 5. Share) to my audience, I aim to create visuals, that will convey my findings in the most efficient way as possible. For that reason, I will use the powerful visualization tool Tableau (Public).
@@ -150,7 +153,7 @@ veryactiveminutes fairlyactiveminutes lightlyactiveminutes
 Next, I am going to find out the average activity level per day. The categories of activity are: sedentary, ligthly active, fairly active and very active. To demonstrate it in an efficient way, I will create a pie-chart. Another definitely interesting insight would be to see the average amount of steps taken during the week.
 
 
-
+![Abbildung image5](images/image5.png) ![Abbildung image6](images/image6.png)
 
 
 
