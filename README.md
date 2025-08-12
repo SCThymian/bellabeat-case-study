@@ -38,7 +38,7 @@ bellabeat-case-study/
 ├── README.md                      # Project overview
 ├── bellabeat_case_study_github.md  # Full case study in Markdown format
 ├── images/                         # Visualizations and screenshots
-└── scripts/                        # R scripts for cleaning, merging, and analysis
+└── scripts/                        # R scripts for cleaning and merging
 ```
 
 ---
@@ -46,7 +46,7 @@ bellabeat-case-study/
 ## 🚀 How to Use
 1. Clone this Repository
 ```bash
-git clone https://github.com/SCThymian/bellabeat-case-study.git
+https://github.com/SCThymian/bellabeat-case-study.git
 ```
 2.	Open bellabeat_case_study_github.md on GitHub or locally in a Markdown viewer.
 
@@ -54,5 +54,4 @@ git clone https://github.com/SCThymian/bellabeat-case-study.git
 
 ## ✍️ Autor
 - **Name:** Stelios C. Thymianos
-- **LinkedIn:** [Dein LinkedIn-Profil](https://www.linkedin.com)
-- **Medium:** [Deine Medium-Seite](https://medium.com)
+- **LinkedIn:** [Stelios Christoforos Thymianos](https://www.linkedin.com/in/stelios-christoforos-thymianos)
