@@ -19,6 +19,7 @@ Scenario:
 I am a junior data analyst working on the marketing analyst team at Bellabeat, a high-tech manufacturer of health-focused products for women. Bellabeat is a successful small company, but they have the potential to become a larger player in the global smart device market. In order to unlock new growth opportunities for the company, I have been asked to focus on one of Bellabeat’s products and analyze smart device data to gain insight into how consumers are using their smart devices. The insights I discover will then help guide marketing strategy for the company. I will present my analysis to the Bellabeat executive team along with my high-level recommendations for Bellabeat’s marketing strategy.
 <br>
 <br>
+
 About the company:
 
 Urška Sršen and Sando Mur founded Bellabeat, a high-tech company that manufactures health-focused smart products. Sršen used her background as an artist to develop beautifully designed technology that informs and inspires women around the world. Collecting data on activity, sleep, stress, and reproductive health has allowed Bellabeat to empower women with knowledge about their own health and habits. Since it was founded in 2013, Bellabeat has grown rapidly and quickly positioned itself as a tech-driven wellness company for women.
@@ -26,6 +27,7 @@ By 2016, Bellabeat had opened offices around the world and launched multiple pro
 Sršen knows that an analysis of Bellabeat’s available consumer data would reveal more opportunities for growth. She has asked the marketing analytics team to focus on a Bellabeat product and analyze smart device usage data in order to gain insight into how people are already using their smart devices. Then, using this information, she would like high-level recommendations for how these trends can inform Bellabeat marketing strategy.
 <br>
 <br>
+
 Products:<br>
 - **Bellabeat app:** The Bellabeat app provides users with health data related to their activity, sleep, stress, menstrual cycle, and mindfulness habits. This data can help users better understand their current habits and make healthy decisions. The Bellabeat app connects to their line of smart wellness products.
 - **Leaf:** Bellabeat’s classic wellness tracker can be worn as a bracelet, necklace, or clip. The Leaf tracker connects to the Bellabeat app to track activity, sleep, and stress.
@@ -64,7 +66,8 @@ Verifying the metadata of our dataset we can confirm it is open-source. The owne
 - **Cited:** Last update was one year ago, which means there is a 1-year lag.
 <br>
 <br>
-_Considerations:_
+
+<i>Considerations:</i>
 - Due to the limitation of size (30 users) and not having any demographic information we could encounter a sampling bias. We are not sure if the sample is representative of the population as a whole. That is why we will give our case study an operational approach.
 - The dataset does not provide information about gender of the users. Bellabeat is a tech-driven wellness company for women only.
 - The data is from 2016, so it is outdated as fitness trackers matured a lot since then. Also the period of the survey is limited (2 months long).
@@ -76,7 +79,7 @@ Most data is recorded from Tuesday to Thursday, which may not be comprehensive e
 ## **3. Process**
 
 In this phase I will clean and manipulate the data properly to set the foundation for an accurate and meaningful analysis. For this purpose, I choose to use R due to it’s accessibility [(Open Source Posit Cloud)](https://posit.cloud/) , the amount of data I will be working with and because the fact that I can create quick data visualizations to gain insights, which I can share with the stakeholders later on.
-Bellow is the summary of the steps I took to complete this phase. For the detailed data cleaning report please click [here](Scripts/Bellabeat%20Data%20Cleaning%20Report.R)..
+Bellow is the summary of the steps I took to complete this phase. For the detailed data cleaning report please click [here](Scripts/Bellabeat%20Data%20Cleaning%20Report.R).
 
 
 1. Setting up the work-environment(R): <br>
@@ -132,7 +135,8 @@ Since I have to present the results of the analysis later (on phase 5. Share) to
 With that have been saying, let´s dive deep into the data!
 <br>
 <br>
-**Daily Activity**
+
+<strong>Daily Activity</strong>
 
 Starting with the analysis of the daily activity and with the summary() function in R, we will discover some first useful insights of user behavior.
 
@@ -171,7 +175,8 @@ Insights:
 - The highest activity was observed at the beginning of the week. Most steps are taken on Tuesday and Saturday, and the fewest on Sunday.
 <br>
 <br>
-**Hourly Activity**
+
+<strong>Hourly Activity</strong>
 
 Let´s get some insights about the user activity during the day. When are users more active?
 
@@ -207,7 +212,8 @@ Insights:
 - Users are most active in the morning and evening, but the peak is around 5:00pm to 7:00pm, which are times when people usually get off work.
 <br>
 <br>
-**Activity and Calories:**
+
+<strong>Activity and Calories:</strong>
 
 I will check the correlation between the different levels of activity (lightly, fairly and very active o) and the burned calories but also the correlation between steps and calories. The three levels of activity are lightly active (low activity), fairly active (medium activity) and very active (high activity).
 
@@ -230,7 +236,8 @@ Insights:
 - There is a positive correlation between the number of steps taken and the number of calories burned.
 <br>
 <br>
-**Daily Sleep**
+
+<strong>Daily Sleep</strong>
 
 Analyzing daily sleep data will help us to understand user sleep patterns. Starting with the summarization of the daily_sleep dataset we have:
 
@@ -258,7 +265,8 @@ Insights:
 - Users spend in average almost 40 minutes in bed being awake. More than a half of them even 55 minutes.
 <br>
 <br>
-**User Engagement**
+
+<strong>User Engagement</strong>
 
 What also matters is the user engagement with the product. I am going to check how engaged the users were with the data tracking by analyzing the number of users per date and by grouping them in full time and casual users.
 
