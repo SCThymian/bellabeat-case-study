@@ -9,7 +9,8 @@
 
 Hello and welcome to my Bellabeat case study!
 This is a capstone project from the Google Data Analytics Professional Certificate, which gives me the opportunity to perform a real-world task of a data analyst. The analysis follows the 6 steps of Data Analysis, that they were taught in the course:
-Ask -> Prepare -> Process -> Analyze -> Share -> Act
+
+**Ask -> Prepare -> Process -> Analyze -> Share -> Act**
 
 ![Abbildung image1](images/image1.png)
 
@@ -23,41 +24,41 @@ Sršen knows that an analysis of Bellabeat’s available consumer data would re
 
 
 Products
-- Bellabeat app: The Bellabeat app provides users with health data related to their activity, sleep, stress, menstrual cycle, and mindfulness habits. This data can help users better understand their current habits and make healthy decisions. The Bellabeat app connects to their line of smart wellness products.
-- Leaf: Bellabeat’s classic wellness tracker can be worn as a bracelet, necklace, or clip. The Leaf tracker connects to the Bellabeat app to track activity, sleep, and stress.
-- Time: This wellness watch combines the timeless look of a classic timepiece with smart technology to track user activity, sleep, and stress. The Time watch connects to the Bellabeat app to provide you with insights into your daily wellness.
-- Spring: This is a water bottle that tracks daily water intake using smart technology to ensure that you are appropriately hydrated throughout the day. The Spring bottle connects to the Bellabeat app to track your hydration levels.
-- Bellabeat membership: Bellabeat also offers a subscription-based membership program for users. Membership gives users 24/7 access to fully personalized guidance on nutrition, activity, sleep, health and beauty, and mindfulness based on their lifestyle and goals.
+- **Bellabeat app:** The Bellabeat app provides users with health data related to their activity, sleep, stress, menstrual cycle, and mindfulness habits. This data can help users better understand their current habits and make healthy decisions. The Bellabeat app connects to their line of smart wellness products.
+- **Leaf:** Bellabeat’s classic wellness tracker can be worn as a bracelet, necklace, or clip. The Leaf tracker connects to the Bellabeat app to track activity, sleep, and stress.
+- **Time:** This wellness watch combines the timeless look of a classic timepiece with smart technology to track user activity, sleep, and stress. The Time watch connects to the Bellabeat app to provide you with insights into your daily wellness.
+- **Spring:** This is a water bottle that tracks daily water intake using smart technology to ensure that you are appropriately hydrated throughout the day. The Spring bottle connects to the Bellabeat app to track your hydration levels.
+- **Bellabeat membership:** Bellabeat also offers a subscription-based membership program for users. Membership gives users 24/7 access to fully personalized guidance on nutrition, activity, sleep, health and beauty, and mindfulness based on their lifestyle and goals.
 
 
 
-## **1.Ask**
+## **1. Ask**
 
 The Ask-Phase is the first foundational step in the data analysis process. It's crucial because it sets the direction for the entire analysis and ensures that everyone, who is involved, is aligned with the business task, that the data analysis aims to solve.
 
-Business task:
+<u>**Business task:**</u>
 Analyzing smart device usage data in order to gain insight into how consumers use non-Bellabeat smart devices. Then, selecting one Bellabeat product to apply these insights to in the presentation. Following three points are the questions needed to be answered by this analysis:
 1. What are some trends in smart device usage?
 2. How could these trends apply to Bellabeat customers?
 3. How could these trends help influence Bellabeat marketing strategy?
 
-Stakeholders:
+<u>**Stakeholders:**</u>
 Knowing the audience is key to successful communication. In this presentation, the following participants will be present:
-Urška Sršen: Bellabeat’s cofounder and Chief Creative Officer
-Sando Mur: Mathematician and Bellabeat’s cofounder; key member of the Bellabeat executive team
-Bellabeat marketing analytics team: A team of data analysts responsible for collecting, analyzing, and reporting data that helps guide Bellabeat’s marketing strategy.
+- Urška Sršen: Bellabeat’s cofounder and Chief Creative Officer
+- Sando Mur: Mathematician and Bellabeat’s cofounder; key member of the Bellabeat executive team
+- Bellabeat marketing analytics team: A team of data analysts responsible for collecting, analyzing, and reporting data that helps guide Bellabeat’s marketing strategy.
 
-## **2.Prepare**
+## **2. Prepare**
 
 To answer Bellabeat's business tasks I will be using  (CC0: Public Domain, dataset made available through ): This Kaggle data set contains personal fitness tracker from thirty (30) fitbit users. All users consented to the submission of personal tracker data, including minute-level output for physical activity, heart rate, and sleep monitoring. It includes information about daily activity, steps, and heart rate that can be used to explore users’ habits. The dataset contains 18 CSV-files and all of them are organized in long-format.
 Verifying the metadata of our dataset we can confirm it is open-source. The owner has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.
 
-ROCCC-analysis of the dataset:
-Reliability: The data is identified as open-source and has a usability rating of 9.41 identified by Kaggle, meaning there is a high level of documentation. The dataset is published under the CC0: Public Domain license.
-Original: This dataset generated by respondents to a distributed survey via Amazon Mechanical Turk. Thirty eligible Fitbit users consented to the submission of personal tracker data.
-Comprehensive: Data minute-level output for physical activity, heart rate, and sleep monitoring. While the data tracks many factors in the user activity and sleep, but the sample size is small and most data is recorded during certain days of the week.
-Current: Data is from March 2016 to May 2016. Data is not current so the users habit may be different now.
-Cited: Last update was one year ago, which means there is a 1-year lag.
+**ROCCC**-analysis of the dataset:
+- **Reliability:** The data is identified as open-source and has a usability rating of 9.41 identified by Kaggle, meaning there is a high level of documentation. The dataset is published under the CC0: Public Domain license.
+- **Original:** This dataset generated by respondents to a distributed survey via Amazon Mechanical Turk. Thirty eligible Fitbit users consented to the submission of personal tracker data.
+- **Comprehensive:** Data minute-level output for physical activity, heart rate, and sleep monitoring. While the data tracks many factors in the user activity and sleep, but the sample size is small and most data is recorded during certain days of the week.
+- **Current:** Data is from March 2016 to May 2016. Data is not current so the users habit may be different now.
+- **Cited:** Last update was one year ago, which means there is a 1-year lag.
 
 
 
@@ -70,25 +71,25 @@ Most data is recorded from Tuesday to Thursday, which may not be comprehensive e
 
 
 
-## **3.Process**
+## **3. Process**
 
 In this phase I will clean and manipulate the data properly to set the foundation for an accurate and meaningful analysis. For this purpose, I choose to use R due to it’s accessibility (Open Source Posit Cloud) , the amount of data I will be working with and because the fact that I can create quick data visualizations to gain insights, which I can share with the stakeholders later on.
 Bellow is the summary of the steps I took to complete this phase. For the detailed data cleaning report please click here.
 
 
-- Setting up the work-environment(R):
-- First of all, we have to install and load all the needed packages that will aid us for the cleaning and analysis process:
+1. Setting up the work-environment(R):
+ First of all, we have to install and load all the needed packages that will aid us for the cleaning and analysis process:
 
 ![Abbildung image2](images/image2.png)
 ![Abbildung image3](images/image3.png)
 
 
-- Importing  Dataset:
-- Then, I am going to upload the .csv files that I 'll work with:
+2. Importing  Dataset:
+Then, I am going to upload the .csv files that I 'll work with:
 
-- daily_activity <- read_csv("data/dailyActivity_merged.csv")
-- daily_calories<- read_csv("data/dailyCalories_merged.csv")
-- daily_steps <- read_csv("data/dailySteps_merged.csv")
+daily_activity <- read_csv("data/dailyActivity_merged.csv")
+daily_calories<- read_csv("data/dailyCalories_merged.csv")
+daily_steps <- read_csv("data/dailySteps_merged.csv")
 daily_sleep <- read_csv("data/sleepDay_merged.csv") 
 hourly_intensities <- read_csv("data/hourlyIntensities_merged.csv") 
 hourly_calories <- read_csv("data/hourlyCalories_merged.csv")
@@ -96,9 +97,9 @@ hourly_steps <- read_csv("data/hourlySteps_merged.csv")
 weight <- read_csv("data/weightLogInfo_merged.csv")
 
 
-- Previewing and checking
+3. Previewing and checking
 
-- Next, I am going to preview the data and check its structure, by using the codes head() and str() , to understand the variables and the data types.
+Next, I am going to preview the data and check its structure, by using the codes head() and str() , to understand the variables and the data types.
 
 By checking the datasets, I noticed that there are already Calories- and Steps-data in the dataset daily_activity contained. To make sure that it so, I am going to use the “which”-function.
 
@@ -110,19 +111,19 @@ I am also checking the number of unique users per data frame before coming on wi
 All data sets have 33 except for sleep data (24) and weight data (8). I will exclude the weight data frame from the analysis since it has too little participants, compared to the other data frames and to avoid biases.
 
 
-- Cleaning and formatting
+4. Cleaning and formatting
 
 After checking the data for duplicates and missing values, there were 3 duplicates in the sleep dataset found and then removed. Next, I ensured consistency by standardizing the column names in each data frame (right syntax and same format). This is helpful for merging the datasets later on. It was also necessary to clean the date-time format in the datasets before we merged them.
 
 
-- Merging Data sets
+5. Merging Data sets
 
-- Finally, I putted all the daily data together in one data frame and I did the same for the hourly data. Now the data is cleaned and ready for analyzing!
-
-
+Finally, I putted all the daily data together in one data frame and I did the same for the hourly data. Now the data is cleaned and ready for analyzing!
 
 
-## **4.Analyze**
+
+
+## **4. Analyze**
 
 Now we are ready to conduct the data analysis to gain insights into the data and identify trends that could inform Bellabeats´s marketing strategy.  As determined by the Process step, I have a variety of data tables that measures different fitness parameters (steps, calories, distance, sleep, activity, etc) in both daily and hourly time frames. However, for organizational consistency as well as ease and simplicity, I will perform analysis on the data tables by whether observations are provided at a daily or hourly intervals. This is made possible because the “Id” column is a shared key that corresponds between each of the data tables. For an even more advanced.
 Since I have to present the results of the analysis later (on phase 5. Share) to my audience, I aim to create visuals, that will convey my findings in the most efficient way as possible. For that reason, I will use the powerful visualization tool Tableau (Public).
@@ -274,16 +275,16 @@ It’s time to summarize the results of the analysis with the stakeholders. In o
 
 Insights and Trends observed:
 
-Data Tracking: The majority of users primarily use the tracker for monitoring activity levels, such as steps, calories burned, and exercise intensity.
+- **Data Tracking:** The majority of users primarily use the tracker for monitoring activity levels, such as steps, calories burned, and exercise intensity.
 A relatively low number of users, 24, engaged with the sleep tracking feature, highlighting a potential lack of awareness of the importance of sleep.
 Only 8 users were actively tracking their weight loss, suggesting an opportunity to enhance the promotion of this feature
-User Engagement: One-third (1/3) of the users stopped tracking their data within a month! This is a very high number and indicates potential issues with user retention or engagement.
-Casual Usage: Only half (50%) of wearers were utilizing the tracker consistently throughout the day. The other half were casual users.
-Activity Level: Users spend on average 16,5 hours a day sitting, are for 3,2 hours lightly active and only for a half-hour fairly and very active.
-Steps and Calories Correlation: A strong proportional relationship exists between the number of steps taken and calories burned, validating the device’s tracking accuracy.
-Weekly Usage Patterns: We observed the highest activity levels on Saturday and at the beginning of the week. Tuesdays and Saturdays typically see the most steps taken, with Sundays recording the fewest. Sunday seems to be the most “lazy” day for users - probably they are using the day for resting.
-Hourly Usage Patterns: Users are most active in the morning and evening, but the peak is around 5:00pm to 7:00pm, which are times when people usually get off work.
-Sleep Patterns: Users tend to sleep more on the weekend and on Wednesdays. Considering that, users were most active on Saturday and Tuesday, the observation that they got the most sleep on Sunday and Wednesday seems plausible.
+- **User Engagement:** One-third (1/3) of the users stopped tracking their data within a month! This is a very high number and indicates potential issues with user retention or engagement.
+- **Casual Usage:** Only half (50%) of wearers were utilizing the tracker consistently throughout the day. The other half were casual users.
+- **Activity Level:** Users spend on average 16,5 hours a day sitting, are for 3,2 hours lightly active and only for a half-hour fairly and very active.
+- **Steps and Calories Correlation:** A strong proportional relationship exists between the number of steps taken and calories burned, validating the device’s tracking accuracy.
+- **Weekly Usage Patterns:** We observed the highest activity levels on Saturday and at the beginning of the week. Tuesdays and Saturdays typically see the most steps taken, with Sundays recording the fewest. Sunday seems to be the most “lazy” day for users - probably they are using the day for resting.
+- **Hourly Usage Patterns:** Users are most active in the morning and evening, but the peak is around 5:00pm to 7:00pm, which are times when people usually get off work.
+- **Sleep Patterns:** Users tend to sleep more on the weekend and on Wednesdays. Considering that, users were most active on Saturday and Tuesday, the observation that they got the most sleep on Sunday and Wednesday seems plausible.
 Users spend in average almost 40 minutes in bed being awake – more than a half (54%) even for 55 minutes.
 
 
