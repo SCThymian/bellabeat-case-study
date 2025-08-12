@@ -75,7 +75,7 @@ Most data is recorded from Tuesday to Thursday, which may not be comprehensive e
 
 ## **3. Process**
 
-In this phase I will clean and manipulate the data properly to set the foundation for an accurate and meaningful analysis. For this purpose, I choose to use R due to it’s accessibility (Open Source Posit Cloud) , the amount of data I will be working with and because the fact that I can create quick data visualizations to gain insights, which I can share with the stakeholders later on.
+In this phase I will clean and manipulate the data properly to set the foundation for an accurate and meaningful analysis. For this purpose, I choose to use R due to it’s accessibility [(Open Source Posit Cloud](https://posit.cloud/) , the amount of data I will be working with and because the fact that I can create quick data visualizations to gain insights, which I can share with the stakeholders later on.
 Bellow is the summary of the steps I took to complete this phase. For the detailed data cleaning report please click here.
 
 
@@ -89,6 +89,7 @@ Bellow is the summary of the steps I took to complete this phase. For the detail
 2. Importing  Dataset:
 Then, I am going to upload the .csv files that I 'll work with:
 
+```
 daily_activity <- read_csv("data/dailyActivity_merged.csv")
 daily_calories<- read_csv("data/dailyCalories_merged.csv")
 daily_steps <- read_csv("data/dailySteps_merged.csv")
@@ -97,7 +98,7 @@ hourly_intensities <- read_csv("data/hourlyIntensities_merged.csv")
 hourly_calories <- read_csv("data/hourlyCalories_merged.csv")
 hourly_steps <- read_csv("data/hourlySteps_merged.csv")
 weight <- read_csv("data/weightLogInfo_merged.csv")
-
+```
 
 3. Previewing and checking
 
@@ -128,13 +129,14 @@ Finally, I putted all the daily data together in one data frame and I did the sa
 ## **4. Analyze**
 
 Now we are ready to conduct the data analysis to gain insights into the data and identify trends that could inform Bellabeats´s marketing strategy.  As determined by the Process step, I have a variety of data tables that measures different fitness parameters (steps, calories, distance, sleep, activity, etc) in both daily and hourly time frames. However, for organizational consistency as well as ease and simplicity, I will perform analysis on the data tables by whether observations are provided at a daily or hourly intervals. This is made possible because the “Id” column is a shared key that corresponds between each of the data tables. For an even more advanced.
-Since I have to present the results of the analysis later (on phase 5. Share) to my audience, I aim to create visuals, that will convey my findings in the most efficient way as possible. For that reason, I will use the powerful visualization tool Tableau (Public).
+Since I have to present the results of the analysis later (on phase 5. Share) to my audience, I aim to create visuals, that will convey my findings in the most efficient way as possible. For that reason, I will use the powerful visualization tool [Tableau (Public)](https://public.tableau.com/app).
 With that have been saying, let´s dive deep into the data!
 
 
 Daily Activity
 Starting with the analysis of the daily activity and with the summary() function in R, we will discover some first useful insights of user behavior.
 
+```
 totalsteps    totaldistance    sedentaryminutes    calories   
  Min.   :    0   Min.   : 0.000   Min.   :   0.0   Min.   :   0  
  1st Qu.: 3790   1st Qu.: 2.620   1st Qu.: 729.8   1st Qu.:1828  
@@ -152,6 +154,7 @@ veryactiveminutes fairlyactiveminutes lightlyactiveminutes
  3rd Qu.: 32.00    3rd Qu.: 19.00      3rd Qu.:264.0       
  Max.   :210.00    Max.   :143.00      Max.   :518.0
 
+```
 
 Next, I am going to find out the average activity level per day. The categories of activity are: sedentary, ligthly active, fairly active and very active. To demonstrate it in an efficient way, I will create a pie-chart. Another definitely interesting insight would be to see the average amount of steps taken during the week.
 
@@ -173,8 +176,10 @@ Insights:
 
 
 Hourly Activity
+
 Let´s get some insights about the user activity during the day. When are users more active?
 
+```
 Totalintensity	averageintensity    calories        	steptotal      
  Min.0.00		Min.   :0.0000  	 Min.   : 42.00   	Min.   :    0.0  
  1st Qu.:0.00		1st Qu.:0.0000  	 1st Qu.: 63.00 	1st Qu.:    0.0  
@@ -182,6 +187,8 @@ Totalintensity	averageintensity    calories        	steptotal
  Mean   :12.04	Mean   :0.2006    	 Mean   : 97.39     Mean   :  320.2  
  3rd Qu.:16.00 	3rd Qu.:0.2667   	 3rd Qu.:108.00     3rd Qu.:  357.0  
  Max.   :180.00 	Max.   :3.0000   	 Max.   :948.00     Max.   :10554.0
+
+```
 
 In order to find out on which hours during the day users are active the most, we have to separate the date_time column in date and time columns:
 
@@ -233,6 +240,7 @@ Insights:
 Daily Sleep
 Analyzing daily sleep data will help us to understand user sleep patterns. Starting with the summarization of the daily_sleep dataset we have:
 
+```
 totalsleeprecords totalminutesasleep totaltimeinbed 
  Min.   :1.00      Min.   : 58.0      Min.   : 61.0  
  1st Qu.:1.00      1st Qu.:361.0      1st Qu.:403.8  
@@ -240,6 +248,7 @@ totalsleeprecords totalminutesasleep totaltimeinbed
  Mean   :1.12      Mean   :419.2      Mean   :458.5  
  3rd Qu.:1.00      3rd Qu.:490.0      3rd Qu.:526.0  
  Max.   :3.00      Max.   :796.0      Max.   :961.0
+```
 
 With the available sleep-data, we can find out the average sleep per weekday and also the average time users spend in bed awake. Another interesting exploration would be how often users sleep during the day and on which weekday are they more likely to do so, but we don`t know exactly how the number of sleep records were recorded. If, for an example, a user did stand up during the night for drinking some water or going to the restroom and then going to sleep again, would this be recorded as two times of sleep or still as one? Was a specific duration of break, until that the sleep will be still counted as one? Since we don’t know for sure, I will leave out this exploration to avoid drawing false conclusions.
 
