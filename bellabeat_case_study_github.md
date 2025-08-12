@@ -12,7 +12,7 @@ This is a capstone project from the [Google Data Analytics Professional Certific
 
 **Ask -> Prepare -> Process -> Analyze -> Share -> Act**
 
-![Abbildung image1](images/image1.png)
+![Abbildung image1](images/image1.jpg)
 
 Scenario:
 
