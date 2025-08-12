@@ -5,7 +5,7 @@
 
 ---
 
-**Introduction**
+## **Introduction**
 
 Hello and welcome to my Bellabeat case study!
 This is a capstone project from the Google Data Analytics Professional Certificate, which gives me the opportunity to perform a real-world task of a data analyst. The analysis follows the 6 steps of Data Analysis, that they were taught in the course:
@@ -31,7 +31,7 @@ Products
 
 
 
-**Ask**
+## **1.Ask**
 
 The Ask-Phase is the first foundational step in the data analysis process. It's crucial because it sets the direction for the entire analysis and ensures that everyone, who is involved, is aligned with the business task, that the data analysis aims to solve.
 
@@ -47,7 +47,7 @@ Urška Sršen: Bellabeat’s cofounder and Chief Creative Officer
 Sando Mur: Mathematician and Bellabeat’s cofounder; key member of the Bellabeat executive team
 Bellabeat marketing analytics team: A team of data analysts responsible for collecting, analyzing, and reporting data that helps guide Bellabeat’s marketing strategy.
 
-**Prepare**
+## **2.Prepare**
 
 To answer Bellabeat's business tasks I will be using  (CC0: Public Domain, dataset made available through ): This Kaggle data set contains personal fitness tracker from thirty (30) fitbit users. All users consented to the submission of personal tracker data, including minute-level output for physical activity, heart rate, and sleep monitoring. It includes information about daily activity, steps, and heart rate that can be used to explore users’ habits. The dataset contains 18 CSV-files and all of them are organized in long-format.
 Verifying the metadata of our dataset we can confirm it is open-source. The owner has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.
@@ -70,7 +70,7 @@ Most data is recorded from Tuesday to Thursday, which may not be comprehensive e
 
 
 
-**Process**
+## **3.Process**
 
 In this phase I will clean and manipulate the data properly to set the foundation for an accurate and meaningful analysis. For this purpose, I choose to use R due to it’s accessibility (Open Source Posit Cloud) , the amount of data I will be working with and because the fact that I can create quick data visualizations to gain insights, which I can share with the stakeholders later on.
 Bellow is the summary of the steps I took to complete this phase. For the detailed data cleaning report please click here.
@@ -122,7 +122,7 @@ After checking the data for duplicates and missing values, there were 3 duplicat
 
 
 
-**Analyze**
+## **4.Analyze**
 
 Now we are ready to conduct the data analysis to gain insights into the data and identify trends that could inform Bellabeats´s marketing strategy.  As determined by the Process step, I have a variety of data tables that measures different fitness parameters (steps, calories, distance, sleep, activity, etc) in both daily and hourly time frames. However, for organizational consistency as well as ease and simplicity, I will perform analysis on the data tables by whether observations are provided at a daily or hourly intervals. This is made possible because the “Id” column is a shared key that corresponds between each of the data tables. For an even more advanced.
 Since I have to present the results of the analysis later (on phase 5. Share) to my audience, I aim to create visuals, that will convey my findings in the most efficient way as possible. For that reason, I will use the powerful visualization tool Tableau (Public).
@@ -262,7 +262,7 @@ Insights:
 - The number of active users declined from 33 to 21 in only one month.
 - Only half of the users were fully engaged in tracking their data. The other half were casual users.
 
-5. Share
+## **5. Share**
 
 It’s time to summarize the results of the analysis with the stakeholders. In order to communicate the findings effectively, I have created a dashboard with the visuals of the high-level insights.
 
@@ -284,7 +284,7 @@ Users spend in average almost 40 minutes in bed being awake – more than a half
 
 
 
-6. Act
+## **6. Act**
 
 Finally, after we have gained insights about how customers are using smart fitness devices, I am going to make data-driven recommendations for one Bellabeat product, in order to help influence the Bellabeat marketing strategy:
 
