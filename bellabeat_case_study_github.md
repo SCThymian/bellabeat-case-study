@@ -210,7 +210,11 @@ Activity and Calories:
 
 I will check the correlation between the different levels of activity (lightly, fairly and very active o) and the burned calories but also the correlation between steps and calories. The three levels of activity are lightly active (low activity), fairly active (medium activity) and very active (high activity).
 
-![Abbildung image9](images/image9.png) ![Abbildung image10](images/image10.png) ![Abbildung image11](images/image11.png)
+<p align="center">
+  <img src="images/image9.png" width="30%">
+  <img src="images/image10.png" width="30%">
+  <img src="images/image11.png" width="30%">
+</p>
 
 - The R-Squared value for Low Active graph is 0.06
 - The R-Squared value for Fairly Active graph is 0.07
