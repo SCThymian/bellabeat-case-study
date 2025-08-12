@@ -1,7 +1,7 @@
 # Bellabeat Data Analysis Case Study
 
 > **Capstone Project** – Google Data Analytics Professional Certificate
-> Author: *Your Name Here*
+> Author: *Stelios C. Thymianos*
 
 ---
 
@@ -195,6 +195,7 @@ hourly_data <- hourly_data %>% mutate( time = replace_na(time, "00:00:00") )
 
 Finally, I can import the dataset in Tableau, so I can create quickly dynamic visuals:
 
+![Abbildung image7](images/image7.png) ![Abbildung image8](images/image8.png)
 
 Insights:
 - Users are most active in the morning and evening, but the peak is around 5:00pm to 7:00pm, which are times when people usually get off work.
@@ -209,13 +210,13 @@ Activity and Calories:
 
 I will check the correlation between the different levels of activity (lightly, fairly and very active o) and the burned calories but also the correlation between steps and calories. The three levels of activity are lightly active (low activity), fairly active (medium activity) and very active (high activity).
 
+![Abbildung image9](images/image9.png) ![Abbildung image10](images/image10.png) ![Abbildung image11](images/image11.png)
 
 - The R-Squared value for Low Active graph is 0.06
 - The R-Squared value for Fairly Active graph is 0.07
 - The R-Squared value for Very Active graph is 0.38
 
-
-
+![Abbildung image12](images/image12.png)
 
 
 Insights:
@@ -236,10 +237,9 @@ totalsleeprecords totalminutesasleep totaltimeinbed
 With the available sleep-data, we can find out the average sleep per weekday and also the average time users spend in bed awake. Another interesting exploration would be how often users sleep during the day and on which weekday are they more likely to do so, but we don`t know exactly how the number of sleep records were recorded. If, for an example, a user did stand up during the night for drinking some water or going to the restroom and then going to sleep again, would this be recorded as two times of sleep or still as one? Was a specific duration of break, until that the sleep will be still counted as one? Since we don’t know for sure, I will leave out this exploration to avoid drawing false conclusions.
 
 
+![Abbildung image13](images/image13.png)
 
-
-
-
+![Abbildung image14](images/image14.png)
 
 Insights:
 
@@ -252,11 +252,10 @@ Insights:
 User Engagement
 What also matters is the user engagement with the product. I am going to check how engaged the users were with the data tracking by analyzing the number of users per date and by grouping them in full time and casual users.
 
+![Abbildung image15](images/image15.png)
 
 
-
-
-
+![Abbildung image16](images/image16.png)
 
 Insights:
 
@@ -267,7 +266,7 @@ Insights:
 
 It’s time to summarize the results of the analysis with the stakeholders. In order to communicate the findings effectively, I have created a dashboard with the visuals of the high-level insights.
 
-
+![Abbildung image17](images/image17.png)
 
 Insights and Trends observed:
 
@@ -287,7 +286,7 @@ Users spend in average almost 40 minutes in bed being awake – more than a half
 
 6. Act
 
-t’s time to summari
+Finally, after we have gained insights about how customers are using smart fitness devices, I am going to make data-driven recommendations for one Bellabeat product, in order to help influence the Bellabeat marketing strategy:
 
 
 Recommendation for the Bellabeat-App:
